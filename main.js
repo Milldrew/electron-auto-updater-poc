@@ -14,6 +14,7 @@ const createWindow = () => {
       preload: path.join(__dirname, 'preload.js')
     }
   })
+  console.log('123')
 
   // and load the index.html of the app.
   mainWindow.loadURL('index.html')

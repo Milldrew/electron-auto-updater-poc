@@ -1,6 +1,6 @@
 {
   "name": "electron-auto-updater-poc",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "auto update poc",
   "main": "main.js",
   "scripts": {
