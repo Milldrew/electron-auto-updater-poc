@@ -5,33 +5,22 @@ const {app, BrowserWindow} = require('electron')
 const path = require('node:path')
 const {autoUpdater} = require('electron-updater')
 
+let mainWindow
 const createWindow = () => {
-  // Create the browser window.
-  const mainWindow = new BrowserWindow({
+  mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
   })
-  console.log('123')
 
   // and load the index.html of the app.
-  mainWindow.loadURL('index.html')
+  mainWindow.loadFile('index.html')
+  // mainWindow.loadURL('./index.html')
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
-  app.on('ready', function () {
-
-    autoUpdater.checkForUpdatesAndNotify()
-  })
-
-  autoUpdater.on('update-available', () => {
-    mainWindow.webContents.send('update_available');
-  })
-  autoUpdater.on('update-downloaded', () => {
-    mainWindow.webContents.send('update_downloaded');
-  })
 }
 
 // This method will be called when Electron has finished
@@ -59,6 +48,16 @@ app.on('window-all-closed', () => {
 
 
 
+app.on('ready', function () {
+  autoUpdater.checkForUpdatesAndNotify()
+})
+
+autoUpdater.on('update-available', () => {
+  mainWindow.webContents.send('update_available');
+})
+autoUpdater.on('update-downloaded', () => {
+  mainWindow.webContents.send('update_downloaded');
+})
 
 
 
