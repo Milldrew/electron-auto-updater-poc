@@ -1,12 +1,12 @@
 {
   "name": "electron-auto-updater-poc",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "description": "auto update poc",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "build": "npx electron-builder build --publish always"
+    "build": "npx electron-builder build --mac --publish  always"
   },
   "keywords": [],
   "author": "",

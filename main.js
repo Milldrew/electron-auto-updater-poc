@@ -16,10 +16,21 @@ const createWindow = () => {
   })
 
   // and load the index.html of the app.
-  mainWindow.loadFile('index.html')
+  mainWindow.loadURL('index.html')
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
+  app.on('ready', function () {
+
+    autoUpdater.checkForUpdatesAndNotify()
+  })
+
+  autoUpdater.on('update-available', () => {
+    mainWindow.webContents.send('update_available');
+  })
+  autoUpdater.on('update-downloaded', () => {
+    mainWindow.webContents.send('update_downloaded');
+  })
 }
 
 // This method will be called when Electron has finished
@@ -46,16 +57,6 @@ app.on('window-all-closed', () => {
 // code. You can also put them in separate files and require them here.
 
 
-app.on('ready', function () {
-  autoUpdater.checkForUpdatesAndNotify()
-})
-
-autoUpdater.on('update-available', () => {
-  mainWindow.webContents.send('update_available');
-})
-autoUpdater.on('update-downloaded', () => {
-  mainWindow.webContents.send('update_downloaded');
-})
 
 
 
