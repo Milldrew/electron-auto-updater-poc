@@ -3,6 +3,7 @@
 // Modules to control application life and create native browser window
 const {app, BrowserWindow} = require('electron')
 const path = require('node:path')
+const {autoUpdater} = require('electron-updater')
 
 const createWindow = () => {
   // Create the browser window.
@@ -43,3 +44,20 @@ app.on('window-all-closed', () => {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
+
+
+app.on('ready', function () {
+  autoUpdater.checkForUpdatesAndNotify()
+})
+
+autoUpdater.on('update-available', () => {
+  mainWindow.webContents.send('update_available');
+})
+autoUpdater.on('update-downloaded', () => {
+  mainWindow.webContents.send('update_downloaded');
+})
+
+
+
+
+
