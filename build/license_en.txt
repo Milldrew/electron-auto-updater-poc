@@ -1,0 +1,51 @@
+# SOFTWARE LICENSE AGREEMENT
+
+**Welcome to the Software Engineering Academy App!**
+
+Before you jump into learning how to develop software, please take a moment to read through this Software License Agreement (”Agreement”). By clicking the “Accept” button, you are agreeing to these terms, which set out the rules for using the Software Engineering Academy software (”the App”). If you don’t agree to these terms, unfortunately, you won’t be able to use the App.
+
+### What You Can Do with the App
+
+- **Use It for Learning**: You can use the App for your personal learning. This means you can go through the lessons, do the exercises, and use all the features, but only for learning about software engineering.
+
+- **Install on Your Device**: You’re allowed to install the App on your own device to learn software engineering.
+
+### Things You Shouldn’t Do
+
+- **Don’t Make Changes or Sell It**: Please don’t change the App or make new stuff with it. Also, don’t sell the App or give it to other people in a way that they could be seen as buying it.
+
+- **Follow the Law**: Only use the App in ways that follow all the laws and don’t infringe on anyone else's rights.
+
+- **Don’t Copy It**: You can’t copy the App or any part of it. This includes the code, designs, and content.
+
+### Ownership and Intellectual Property
+
+Remember, just because you can use the App, doesn’t mean you own it. The App and everything in it is still owned by us. This includes all the designs, code, and content.
+
+### How Long You Can Use the App
+
+This Agreement lasts until either you or we decide to end it. You can end it anytime by just stopping using the App and deleting it from your device. We can end this Agreement if you don’t follow the terms.
+
+### No Warranties
+
+We’re providing the App “as-is” without any guarantees. This means we can’t promise anything about how well it will work or whether it will always work perfectly.
+
+### Limitation of Liability
+
+Just a heads up, we won’t be responsible for any issues or damages that happen from using the App. This includes if the App doesn’t work as expected, or if there’s a bug or error.
+
+### General Stuff
+
+- **Entire Agreement**: What you’re reading now is the full set of rules between you and us.
+
+- **Governing Law**: The rules are made under the laws of the place where our company is based.
+
+- **Changes to the Agreement**: We might update these terms now and then. If we make changes, we’ll tell you the next time you open the App, and you’ll need to agree to them to keep using the App.
+
+### Agreeing to This Agreement
+
+By clicking the “Accept” button, you’re saying that you agree to these terms and want to start using the App according to this Agreement.
+
+**Enjoy learning with the Software Engineering Academy!**
+
+

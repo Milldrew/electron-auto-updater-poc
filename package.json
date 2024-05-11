@@ -1,0 +1,56 @@
+{
+  "name": "electron-auto-updater-poc",
+  "version": "1.0.0",
+  "description": "auto update poc",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^30.0.3",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.poc.auto.update",
+    "productName": "POC AUTO UPDATE",
+    "buildVersion": "1.0.0",
+    "copyright": "Copyright © 2024 Andrew Miller",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "!mas-dist/**/*",
+      "!mas-dev-dist/**/*",
+      "!local-dist/**/*",
+      "!dist/**/*",
+      "!hidden-configs/**"
+    ],
+    "mac": {
+      "category": "public.app-category.education",
+      "type": "distribution",
+      "gatekeeperAssess": false,
+      "target": {
+        "target": "dmg",
+        "arch": [
+          "universal"
+        ]
+      },
+      "extendInfo": {
+        "ElectronTeamID": "AVP6N75QSR"
+      }
+    },
+    "dmg": {
+      "icon": "./build/potato-chip-icon.icns",
+      "sign": false
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Milldrew/PotatoChip2.git"
+  }
+}
